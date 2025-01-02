@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funky Nonsense Portfolio</title>
+    <style>
+        body {
+            background-color: #ffefd5;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            color: #ff69b4;
+            text-align: center;
+            margin: 0;
+        }
+
+        header {
+            background-color: #00ffff;
+            padding: 20px;
+            border-bottom: 5px dashed #ff4500;
+        }
+
+        header h1 {
+            font-size: 3em;
+            animation: rainbow 3s infinite;
+        }
+
+        @keyframes rainbow {
+            0% { color: red; }
+            25% { color: orange; }
+            50% { color: yellow; }
+            75% { color: green; }
+            100% { color: blue; }
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .profile-pic {
+            width: 200px;
+            border-radius: 50%;
+            border: 5px dotted #8a2be2;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .skill {
+            background-color: #32cd32;
+            padding: 10px;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: rotate(45deg);
+        }
+
+        .skill span {
+            transform: rotate(-45deg);
+        }
+
+        .random-fact {
+            font-size: 1.5em;
+            margin: 30px 0;
+            color: #4b0082;
+        }
+
+        footer {
+            background-color: #ff6347;
+            padding: 10px;
+            border-top: 5px dotted #00ced1;
+        }
+
+        footer a {
+            color: #ffff00;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Funky Nonsense Portfolio!</h1>
+    </header>
+
+    <div class="content">
+        <img src="https://via.placeholder.com/200" alt="Profile Picture" class="profile-pic">
+        <h2>About Me</h2>
+        <p>Hi! I'm a certified unicorn whisperer and professional bubble-wrap popper.</p>
+
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill"><span>🦄 Unicorn Taming</span></div>
+            <div class="skill"><span>🌈 Rainbow Baking</span></div>
+            <div class="skill"><span>💻 Coding (Maybe?)</span></div>
+        </div>
+
+        <h2>Random Fact</h2>
+        <p class="random-fact">Did you know? Bananas are berries, but strawberries aren't!</p>
+    </div>
+
+    <footer>
+        <p>Follow me on my imaginary social media:</p>
+        <a href="#">@NonsenseMaster3000</a>
+    </footer>
+</body>
+</html>
